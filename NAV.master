@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NAV.master.cs" Inherits="NAV" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    
+        ul
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:#333;
+        }
+
+        li
+        {
+            float:left;
+        }
+
+        li a 
+        {
+            display:block;
+            color:white;
+            text-align:center;
+            padding: 14px 16px;
+            text-decoration:none;
+        }
+
+        li a:hover
+        {
+            background-color:blue;
+            color:black;
+        }
+        .auto-style10 {
+            height: 188px;
+            width: 202px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="form1" runat="server" style="background-color: #FFFFFF">
+   <div>
+       <ul>
+        <li><a class="active" href="Home.aspx">Home</a></li>
+        <li><a href="UserLogin.aspx">Patients</a></li>
+        <li><a href="Admin.aspx">Admin</a></li>
+        <li><a href="Doctor.aspx">Doctor</a></li>
+        <li><a href="AboutUs.aspx">About</a></li>
+        </ul>
+</div>
+         <div style="border: medium outset #669999">
+        <br />
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <table class="auto-style1" style="border-style: none; border-width: thin; border-color: #FF0000 #FFFFFF #FFFFFF #FFFFFF;">
+            <tr>
+                <td class="auto-style2" style="color: #FF0000; font-weight: bold;">
+                    &nbsp;</td>
+                <td style="text-align: center; font-size: 30pt; font-style: normal; color: #0099CC; font-family: Tahoma; font-weight: normal; background-color: #FFFFFF;" class="auto-style13">  
+                    Dr Monnakgotla Pharmacy 
+                    <br />
+
+                    <img alt="Logo" class="auto-style10" src="App_Images/logo2.png" /><br />
+
+                </td>
+                    &nbsp;</tr>
+            <tr>
+                <td class="auto-style14" style="background-color: #FFFFFF">
+                    &nbsp;</td>
+                <td class="auto-style11" style="background-color: #FFFFFF;">    
+            
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="font-size: xx-small; width: 1385px; text-align: center;">
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+            
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style15" style="border-style: none;">
+                    &nbsp;</td>
+                <td style="border-style: none; " class="auto-style12">    
+            
+                    <br />
+            
+                    </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+    <footer style="text-align:center">&copy Designed By LF Leoto </footer>
+</body>
+</html>
